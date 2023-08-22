@@ -10,12 +10,12 @@
  *****************************************************************************/
 /**
  * @file stats.h 
- * @brief <Add Brief Description Here >
+ * @brief Function declarations for stats.c
  *
- * <Add Extended Description Here>
+ * Function declarations for stats.c analytics program
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author William Brashear
+ * @date 8/22/2023
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +24,87 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief prints min, max, mean, median
  *
- * <Add Extended Description Here>
+ * prints min, max, mean, median
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param Data Array
+ * @param Size of Array
  *
- * @return <Add Return Informaiton here>
+ * @return print of min, max, mean, median
  */
+void print_statistics(unsigned char arr[], int n);
 
+/**
+ * @brief prints array
+ *
+ * prints array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of array
+ */
+void print_array(unsigned char arr[], int n);
+
+/**
+ * @brief finds median of array
+ *
+ * finds median of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the median of array
+ */
+void find_median(unsigned char arr[], int n);
+
+/**
+ * @brief finds mean of array
+ *
+ * finds mean of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the mean of array
+ */
+void find_mean(unsigned char arr[], int n);
+
+/**
+ * @brief finds max of array
+ *
+ * finds max of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the max of array
+ */
+void find_maximum(unsigned char arr[], int n);
+
+/**
+ * @brief finds min of array
+ *
+ * finds min of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the min of array
+ */
+void find_minimum(unsigned char arr[], int n);
+
+/**
+ * @brief sorts array in reverse
+ *
+ * sorts array in reverse
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return sorts array in reverse
+ */
+void sort_array(unsigned char arr[], int n);
 
 #endif /* __STATS_H__ */

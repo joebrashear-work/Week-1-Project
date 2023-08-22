@@ -37,7 +37,93 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
+  printf("Hello, World!\n");
 }
 
 /* Add other Implementation File Code Here */
+
+/* Add Your Declarations and Function Comments here */ 
+
+/**
+ * @brief prints min, max, mean, median
+ *
+ * prints min, max, mean, median
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of min, max, mean, median
+ */
+void print_statistics(unsigned char arr[], int n){return;}
+
+/**
+ * @brief prints array
+ *
+ * prints array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of array
+ */
+void print_array(unsigned char arr[], int n){return;}
+
+/**
+ * @brief finds median of array
+ *
+ * finds median of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the median of array
+ */
+void find_median(unsigned char arr[], int n){return;}
+
+/**
+ * @brief finds mean of array
+ *
+ * finds mean of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the mean of array
+ */
+void find_mean(unsigned char arr[], int n){return;}
+
+/**
+ * @brief finds max of array
+ *
+ * finds max of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the max of array
+ */
+void find_maximum(unsigned char arr[], int n){return;}
+
+/**
+ * @brief finds min of array
+ *
+ * finds min of array
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return print of the min of array
+ */
+void find_minimum(unsigned char arr[], int n){return;}
+
+/**
+ * @brief sorts array in reverse
+ *
+ * sorts array in reverse
+ *
+ * @param Data Array
+ * @param Size of Array
+ *
+ * @return sorts array in reverse
+ */
+void sort_array(unsigned char arr[], int n){return;}
