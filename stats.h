@@ -10,12 +10,12 @@
  *****************************************************************************/
 /**
  * @file stats.h 
- * @brief <Add Brief Description Here >
+ * @brief function declarations
  *
- * <Add Extended Description Here>
+ * function declarations for assignment
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author William Brashear
+ * @date 8/23/2023
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +24,88 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief prints min, max, mean and median
  *
- * <Add Extended Description Here>
+ * prints min, max, mean and median
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param unsigned char array with data
+ * @param size of array
  *
- * @return <Add Return Informaiton here>
+ * @return prints statistics
  */
+ void print_statistic(unsigned char arr[], int SIZE);
+
+/**
+ * @brief prints array
+ *
+ * prints array
+ *
+ * @param unsigned char array with data
+ * @param size of array
+ *
+ * @return prints array
+ */
+ void print_array(unsigned char arr[], int SIZE);
+
+/**
+ * @brief prints array
+ *
+ * prints array
+ *
+ * @param unsigned char array with data
+ * @param size of array
+ *
+ * @return prints array
+ */
+ unsigned char find_median(unsigned char arr[], int SIZE);
+
+/**
+ * @brief finds mean of array
+ *
+ * finds mean of array
+ *
+ * @param unsigned char array with data
+ * @param size of array
+ *
+ * @return mean of array
+ */
+ unsigned char find_mean(unsigned char arr[], int SIZE);
+
+/**
+ * @brief finds max of array
+ *
+ * finds max of array
+ *
+ * @param unsigned char array with data
+ * @param size of array
+ *
+ * @return max of array
+ */
+ unsigned char find_maximum(unsigned char arr[], int SIZE);
+
+/**
+ * @brief finds min of array
+ *
+ * finds min of array
+ *
+ * @param unsigned char array with data
+ * @param size of array
+ *
+ * @return min of array
+ */
+ unsigned char find_minimum(unsigned char arr[], int SIZE);
+
+/**
+ * @brief sorts array
+ *
+ * sorts array
+ *
+ * @param unsigned char array with data
+ * @param size of array
+ *
+ * @return sorted array in memory
+ */
+ void sort_array(unsigned char arr[], int SIZE);
 
 
 #endif /* __STATS_H__ */
