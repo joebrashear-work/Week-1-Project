@@ -41,3 +41,10 @@ void main() {
 }
 
 /* Add other Implementation File Code Here */
+void print_statistic(unsigned char arr[], int SIZE);
+void print_array(unsigned char arr[], int SIZE);
+unsigned char find_median(unsigned char arr[], int SIZE);
+unsigned char find_mean(unsigned char arr[], int SIZE);
+unsigned char find_maximum(unsigned char arr[], int SIZE);
+unsigned char find_minimum(unsigned char arr[], int SIZE);
+void sort_array(unsigned char arr[], int SIZE);
