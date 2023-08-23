@@ -37,15 +37,18 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  print_array(test, SIZE);
-  sort_array(test, SIZE);
-  print_array(test, SIZE);
+  print_statistics(test, SIZE);
 }
 
 /* Add other Implementation File Code Here */
-void print_statistic(unsigned char arr[], int n)
+void print_statistics(unsigned char arr[], int n)
 {
-  return;
+  sort_array(arr, n);
+  print_array(arr, n);
+  printf("Min: %d\n", find_minimum(arr, n));
+  printf("Max: %d\n", find_maximum(arr, n));
+  printf("Mean: %d\n", find_mean(arr, n));
+  printf("Median: %d\n", find_median(arr, n));
 }
 void print_array(unsigned char arr[], int n)
 {
@@ -54,31 +57,40 @@ void print_array(unsigned char arr[], int n)
   {
     printf("%d ", arr[i]);
   }
-  printf("]");
+  printf("]\n");
 }
 unsigned char find_median(unsigned char arr[], int n)
 {
+  if (n == 1)
+  {
+    return arr[0];
+  }
   if (n % 2 == 1)
   {
     return arr[n/2];
   }
   else
   {
-    
+    return (arr[n/2] + arr[(n/2)-1]) / 2;
   }
-  return 0;
 }
 unsigned char find_mean(unsigned char arr[], int n)
 {
-  return 0;
+  unsigned int sum = 0;
+  for (int i = 0; i < n; i++)
+  {
+    sum += arr[i];
+  }
+
+  return sum / n;
 }
 unsigned char find_maximum(unsigned char arr[], int n)
 {
-  return 0;
+  return arr[0];
 }
 unsigned char find_minimum(unsigned char arr[], int n)
 {
-  return 0;
+  return arr[n-1];
 }
 void sort_array(unsigned char arr[], int n)
 {

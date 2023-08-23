@@ -33,7 +33,7 @@
  *
  * @return prints statistics
  */
-void print_statistic(unsigned char arr[], int n);
+void print_statistics(unsigned char arr[], int n);
 
 /**
  * @brief prints array
