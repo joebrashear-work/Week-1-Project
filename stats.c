@@ -37,14 +37,61 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
+  print_array(test, SIZE);
+  sort_array(test, SIZE);
+  print_array(test, SIZE);
 }
 
 /* Add other Implementation File Code Here */
-void print_statistic(unsigned char arr[], int SIZE);
-void print_array(unsigned char arr[], int SIZE);
-unsigned char find_median(unsigned char arr[], int SIZE);
-unsigned char find_mean(unsigned char arr[], int SIZE);
-unsigned char find_maximum(unsigned char arr[], int SIZE);
-unsigned char find_minimum(unsigned char arr[], int SIZE);
-void sort_array(unsigned char arr[], int SIZE);
+void print_statistic(unsigned char arr[], int n)
+{
+  return;
+}
+void print_array(unsigned char arr[], int n)
+{
+  printf("[ ");
+  for (int i = 0; i < n; i++)
+  {
+    printf("%d ", arr[i]);
+  }
+  printf("]");
+}
+unsigned char find_median(unsigned char arr[], int n)
+{
+  if (n % 2 == 1)
+  {
+    return arr[n/2];
+  }
+  else
+  {
+    
+  }
+  return 0;
+}
+unsigned char find_mean(unsigned char arr[], int n)
+{
+  return 0;
+}
+unsigned char find_maximum(unsigned char arr[], int n)
+{
+  return 0;
+}
+unsigned char find_minimum(unsigned char arr[], int n)
+{
+  return 0;
+}
+void sort_array(unsigned char arr[], int n)
+{
+  for (int i = 0; i < n; i++)
+  {
+    for (int j = i + 1; j < n; j++)
+    {
+      if (arr[i] < arr[j])
+      {
+        unsigned char temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      } 
+    }
+  }
+}
