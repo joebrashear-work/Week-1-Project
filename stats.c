@@ -34,6 +34,7 @@ void main() {
                               200, 122, 150, 90,   92,  87, 177, 244,
                               201,   6,  12,  60,   8,   2,   5,  67,
                                 7,  87, 250, 230,  99,   3, 100,  90};
+  //unsigned char test[SIZE] = {};
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
@@ -61,6 +62,11 @@ void print_array(unsigned char arr[], int n)
 }
 unsigned char find_median(unsigned char arr[], int n)
 {
+  if (n == 0)
+  {
+    return 0;
+  }
+
   if (n == 1)
   {
     return arr[0];
@@ -76,7 +82,12 @@ unsigned char find_median(unsigned char arr[], int n)
 }
 unsigned char find_mean(unsigned char arr[], int n)
 {
-  unsigned int sum = 0;
+  if (n == 0)
+  {
+    return 0;
+  }
+
+  unsigned long sum = 0;
   for (int i = 0; i < n; i++)
   {
     sum += arr[i];
@@ -86,10 +97,18 @@ unsigned char find_mean(unsigned char arr[], int n)
 }
 unsigned char find_maximum(unsigned char arr[], int n)
 {
+  if (n == 0)
+  {
+    return 0;
+  }
   return arr[0];
 }
 unsigned char find_minimum(unsigned char arr[], int n)
 {
+  if (n == 0)
+  {
+    return 0;
+  }
   return arr[n-1];
 }
 void sort_array(unsigned char arr[], int n)
